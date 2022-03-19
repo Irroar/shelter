@@ -70,59 +70,6 @@ linear-gradient(0deg, #211F20, #211F20);
   color: var(--color-primary);
 }
 
-.about {
-  display: flex;
-}
-
-.donations {
-  display: flex;
-}
-
-.donations h3 {
-  font-family: Georgia;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: 0.06em;
-  text-align: left;
-}
-
-.donations h5 {
-  font-family: Georgia;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0.06em;
-  text-align: left;
-}
-
-.donations p {
-  font-family: Arial;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0px;
-  text-align: left;
-
-}
-
-.donations__card {
-  background-color: var(--color-primary);
-}
-
-.donations__card h4 {
-  font-family: Georgia;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0.06em;
-  text-align: left;
-
-}
 
 .footer {
   display: flex;
@@ -189,4 +136,86 @@ linear-gradient(0deg, #211F20, #211F20);
   color: var(--color-dark-xl);
 
   margin-top: 25px;
+}
+
+/* donations */
+
+.donations {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+  padding: 80px 182px 100px 183px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.donations__content {
+  max-width: 380px;
+}
+
+.donations__content h3 {
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--color-dark-l);
+  width: 300px;
+}
+
+.donations__content h5 {
+  font-family: Georgia;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--color-dark-l);
+  margin: 20px 0 20px 0;
+}
+
+.donations__content p {
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: var(--color-dark-m);
+}
+
+.donations__card {
+  background-color: var(--color-primary);
+  width: 349px;
+  height: 43px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+
+.donations__card h4 {
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 15px 0 15px;
+  color: var(--color-dark-l);
+}
+
+.donations__card h4:before {
+  content: "";
+  display: block;
+  background: url("/assets/icons/credit-card.svg") no-repeat;
+  width: 30px;
+  height: 23px;
+  float: left;
+  margin-right: 12px;
 }
