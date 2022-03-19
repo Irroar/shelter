@@ -1,0 +1,192 @@
+:root {
+  --color-primary: #f1cdb3;
+  --color-light-s: #fafafa;
+  --color-light-xl: #ffffff;
+  --color-dark-s: #cdcdcd;
+  --color-dark-m: #b2b2b2;
+  --color-dark-l: #545454;
+  --color-dark-xl: #4c4c4c;
+  --color-dark-3xl: #292929;
+}
+
+@font-face {
+  font-family: Georgia;
+  src: url(/assets/fonts/georgia.ttf);
+}
+
+@font-face {
+  font-family: Arial;
+  src: url(/assets/fonts/arial.ttf);
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, 
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+linear-gradient(0deg, #211F20, #211F20);
+}
+
+.not-only {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+linear-gradient(0deg, #211F20, #211F20);
+}
+
+.not-only-wrapper {
+  display: flex;
+}
+
+.logo {
+  color: var(--color-primary);
+}
+
+.about {
+  display: flex;
+}
+
+.donations {
+  display: flex;
+}
+
+.donations h3 {
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.donations h5 {
+  font-family: Georgia;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.donations p {
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
+
+.donations__card {
+  background-color: var(--color-primary);
+}
+
+.donations__card h4 {
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: left;
+
+}
+
+.footer {
+  display: flex;
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+linear-gradient(0deg, #211F20, #211F20);
+}
+
+.footer h3 {
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  text-align: left;
+
+  color: var(--color-light-xl);
+}
+
+.footer p {
+  color: var(--color-primary);
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: left;
+
+}
+
+/* about */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 175px 100px 175px;
+}
+
+.about__content {
+  max-width: 430px;
+  margin: 14px 0;
+}
+
+.about__content h3 {
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--color-dark-l);
+}
+
+.about__content p {
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--color-dark-xl);
+
+  margin-top: 25px;
+}
