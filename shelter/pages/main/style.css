@@ -35,12 +35,10 @@ html {
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
 }
 
 img {
@@ -220,6 +218,45 @@ h6 {
   min-height: 271.77px;
 }
 
+/* =========================== ABOUT ========================= */
+
+.about__container {
+  background: var(--color-light-xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 120px;
+}
+
+.about__content {
+  max-width: 430px;
+}
+
+.about__content .about__header {
+  max-width: 370px;
+  text-align: left;
+}
+
+.about__content > *:not(:last-child) {
+  padding: 0px 0px 25px 0px;
+}
+
+.about__content p{
+  color: var(--color-dark-xl);
+  line-height: 160%;
+  font-size: 15px;
+  font-family: Arial;
+}
+
+.content-header {
+  color: var(--color-dark-l);
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+/* =============================================================== */
 .footer {
   display: flex;
   background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
@@ -248,43 +285,6 @@ linear-gradient(0deg, #211F20, #211F20);
   letter-spacing: 0.06em;
   text-align: left;
 
-}
-
-/* about */
-
-.about {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 175px 100px 175px;
-}
-
-.about__content {
-  max-width: 430px;
-  margin: 14px 0;
-}
-
-.about__content h3 {
-  font-family: Georgia;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: 0.06em;
-  text-align: left;
-  color: var(--color-dark-l);
-}
-
-.about__content p {
-  font-family: Arial;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: var(--color-dark-xl);
-
-  margin-top: 25px;
 }
 
 /* donations */
