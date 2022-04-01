@@ -32,6 +32,16 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Georgia;
+  scroll-behavior: smooth;
+}
+
 *,
 *::after,
 *::before {
@@ -287,86 +297,80 @@ linear-gradient(0deg, #211F20, #211F20);
 
 }
 
-/* donations */
+/* ============================ DONATIONS =============================== */
 
-.donations {
-  display: flex;
-  column-gap: 30px;
-  justify-content: space-between;
-  padding: 80px 182px 100px 183px;
-  max-width: 1280px;
-  margin: 0 auto;
+.main__donation {
+  background: var(--color-light-l);
 }
 
-.donations__content {
+.donation__container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.donation__content {
   max-width: 380px;
 }
 
-.donations__content h3 {
-  font-family: Georgia;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: 0.06em;
-  text-align: left;
-  color: var(--color-dark-l);
-  width: 300px;
+.donation__content > *:not(:last-child) {
+  margin-bottom: 19px;
 }
 
-.donations__content h5 {
-  font-family: Georgia;
+.donation__header {
+  max-width: 300px;
+  text-align: left;
+}
+
+.donation__subtitle {
   font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 17px;
+  line-height: 110%;
   letter-spacing: 0.06em;
-  text-align: left;
   color: var(--color-dark-l);
-  margin: 20px 0 20px 0;
 }
 
-.donations__content p {
-  font-family: Arial;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0px;
-  text-align: left;
-
-  color: var(--color-dark-m);
-}
-
-.donations__card {
-  background-color: var(--color-primary);
-  width: 349px;
+.donation__credit-card {
+  background: var(--color-primary);
+  max-width: 349px;
   height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 9px;
-  margin-bottom: 20px;
+  transition: all 0.5s ease;
 }
 
-.donations__card h4 {
-  font-family: Georgia;
+.donation__image {
+  max-width: 505px;
+  max-height: 261px;
+}
+
+.donation__credit-card a {
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 23px;
+  line-height: 115%;
   letter-spacing: 0.06em;
-  text-align: center;
-  padding-top: 10px;
-  margin: 0 15px 0 15px;
   color: var(--color-dark-l);
 }
 
-.donations__card h4:before {
+.donation__credit-card a::before {
   content: "";
   display: block;
-  background: url("/assets/icons/credit-card.svg") no-repeat;
+  background: url(/assets/icons/credit-card.svg) no-repeat;
   width: 30px;
   height: 23px;
   float: left;
   margin-right: 12px;
+  transition: all 0.7s ease;
+}
+
+.donation__annotation {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-dark-m);
+  font-style: italic;
 }
 
 /* FRIENDS */
