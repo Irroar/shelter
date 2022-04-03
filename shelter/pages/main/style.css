@@ -266,35 +266,96 @@ h6 {
   text-align: center;
 }
 
-/* =============================================================== */
+/* ============================ FOOTER ================================ */
+
 .footer {
+  background: var(--footer-gradient);
+  padding-top: 40px;
+}
+
+.footer__container {
   display: flex;
-  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-linear-gradient(0deg, #211F20, #211F20);
+  column-gap: 160px;
 }
 
-.footer h3 {
-  font-family: Georgia;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: 0.06em;
-  text-align: left;
-
-  color: var(--color-light-xl);
+.footer__container > *:not(:last-child) {
+  padding-top: 16px;
 }
 
-.footer p {
+.footer-text {
   color: var(--color-primary);
-  font-family: Georgia;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 23px;
+  line-height: 115%;
   letter-spacing: 0.06em;
-  text-align: left;
+}
 
+.footer-block > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.footer__contacts {
+  max-width: 279px;
+}
+
+.footer__header {
+  color: var(--color-light-xl);
+  text-align: left;
+}
+
+
+.footer__email {
+  display: flex;
+  align-items: center;
+  max-width: 252px;
+  height: 32px;
+}
+
+.footer__email a::before{
+  display: block;
+  content: "";
+  background: url(/assets/icons/icon-email.svg) no-repeat;
+  width: 40px;
+  height: 32px;
+  float: left;
+  margin-right: 20px;
+}
+
+.footer__contacts .footer-text {
+  line-height: 160%;
+}
+
+.footer__phone a::before{
+  display: block;
+  content: "";
+  background: url(/assets/icons/icon-phone.svg) no-repeat;
+  width: 40px;
+  height: 32px;
+  float: left;
+  margin-right: 20px;
+}
+
+.footer__address {
+  max-width: 302px;
+}
+
+.footer__address > *:last-child {
+  margin-top: 32px;
+}
+
+.footer__header {
+  margin-bottom: 34px;
+}
+
+.footer__content {
+  background-image: url(/assets/icons/icon-marker.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 42px;
+  min-height: 32px;
+}
+
+.footer__content:last-child a{
+  line-height: 160%;
 }
 
 /* ============================ DONATIONS =============================== */
