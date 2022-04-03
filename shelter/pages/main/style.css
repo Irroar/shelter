@@ -18,13 +18,22 @@
 }
 
 @font-face {
-  font-family: Georgia;
-  src: url(/assets/fonts/georgia.ttf);
+  font-family: 'Georgia';
+  src: url('/assets/fonts/Georgia.woff2') format('woff2'),
+      url('/assets/fonts/Georgia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+
 @font-face {
-  font-family: Arial;
-  src: url(/assets/fonts/arial.ttf);
+  font-family: 'Arial';
+  src: url('/assets/fonts/ArialMT.woff2') format('woff2'),
+      url('/assets/fonts/ArialMT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -146,6 +155,11 @@ h6 {
   flex-wrap: wrap;
 }
 
+.header__item:first-child {
+  border-bottom: 3px solid #F1CDB3;
+}
+
+
 
 .header__item:not(:last-child) {
   margin: 0px 35px 0px 0px;
@@ -206,7 +220,6 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 45px;
   min-height: 52px;
   max-width: 208px;
   color: var(--color-dark-3xl);
@@ -434,102 +447,114 @@ h6 {
   font-style: italic;
 }
 
-/* FRIENDS */
+/* ========================= FRIENDS =================================== */
 
-.gray {
-  background-color: var(--color-light-l);
+.main__friends {
+  background: var(--color-light-l);
 }
 
-.friends {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  background-color: var(--color-light-l);
-}
-
-.friends__header {
-  color: var(--color-dark-l);
-  font-family: Georgia;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  max-width: 400px;
-}
-
-.friends__carousel {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  padding: 60px 0;
-  align-items: center;
-}
-
-.friends__carousel__cards {
-  display: flex;
-  column-gap: 90px;
-  
-}
-
-.friends__carousel__card {
-  background-color: var(--color-light-s);
+.friends__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 30px;
-  padding-bottom: 30px;
 }
 
-.card-name {
-  font-family: Georgia;
-  font-size: 20px;
+.friends__container > *:not(:last-child) {
+  padding: 0px 0px 60px 0px;
+}
+
+.friends__header {
+  max-width: 400px;
+  text-align: center;
+}
+
+.friends__slider {
+  display: flex;
+  align-items: center;
+  column-gap: 53px;
+  min-height: 435px;
+}
+
+.friends__slider-container {
+  display: flex;
+  max-width: 990px;
+  width: 990px;
+  justify-content: space-between;
+}
+
+.friends-button {
+  border-radius: 100px;
+  border: 2px solid var(--color-primary);
+  width: 48px;
+  height: 48px;
+  background: var(--color-light-l);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+.friends-button img {
+  pointer-events: none;
+}
+
+
+.friends__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-light-s);
+  border-radius: 9px;
+  transition: all 0.5s ease;
+  
+}
+
+.friends__card > * {
+  margin: 0px 0px 30px 0px;
+}
+
+.friends__name {
   color: var(--color-dark-l);
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  transition: all 0.2s ease;
 }
 
-.card-button {
-  width: 187px;
-  height: 52px;
+.friends__button {
+  min-height: 48px;
+  padding: 0px 43px;
   border-radius: 100px;
   border: 2px solid var(--color-primary);
   background-color: var(--color-light-s);
-
-  font-family: Georgia;
   font-size: 17px;
   cursor: pointer;
-}
-
-
-.rest-button {
-  width: 261px;
-  height: 52px;
-  background-color: var(--color-primary);
-  border: none;
-  border-radius: 100px;
-
-  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
   font-family: Georgia;
-  cursor: pointer;
+  color: var(--color-dark-3xl);
+  transition: all 0.5s ease;
 }
 
-.carousel__button {
-  width: 52px;
-  height: 52px;
+.friends__pets {
+  padding: 0px 44px;
+  max-width: 261px;
+  min-height: 51px;
   border-radius: 100px;
-  border: 2px solid var(--color-primary);
-  background-color: var(--color-light-l);
-  cursor: pointer;
-}
+  background: var(--color-primary);
+  color: var(--color-dark-3xl);
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
 
-.carousel__button img {
-  height: 6px;
-  width: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
 }
 
 
