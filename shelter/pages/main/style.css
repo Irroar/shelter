@@ -159,8 +159,6 @@ h6 {
   border-bottom: 3px solid #F1CDB3;
 }
 
-
-
 .header__item:not(:last-child) {
   margin: 0px 35px 0px 0px;
 }
@@ -170,6 +168,14 @@ h6 {
   font-family: Arial;
   font-size: 15px;
   line-height: 160%;
+}
+
+.header__item:first-child .header__link {
+  color: var(--color-light-s);
+}
+
+.header__link:hover {
+  color: var(--color-light-s);
 }
 
 /* ============================= MAIN ============================= */
@@ -227,6 +233,10 @@ h6 {
   line-height: 130%;
   letter-spacing: 0.06em;
   transition: all 0.5s ease;
+}
+
+.not-only__link:hover {
+  background: var(--color-primary-light);
 }
 
 .not-only__image {
@@ -416,6 +426,11 @@ h6 {
   transition: all 0.5s ease;
 }
 
+.donation__credit-card:hover {
+  cursor: pointer;
+  background: var(--color-primary-light);
+}
+
 .donation__image {
   max-width: 505px;
   max-height: 261px;
@@ -496,6 +511,11 @@ h6 {
   transition: all 0.5s ease;
 }
 
+.friends-button:hover {
+  border: 2px solid var(--color-primary-light);
+  background: var(--color-primary-light);
+}
+
 
 .friends-button img {
   pointer-events: none;
@@ -510,8 +530,9 @@ h6 {
   background: var(--color-light-s);
   border-radius: 9px;
   transition: all 0.5s ease;
-  
 }
+
+
 
 .friends__card > * {
   margin: 0px 0px 30px 0px;
@@ -540,6 +561,17 @@ h6 {
   transition: all 0.5s ease;
 }
 
+.friends__card:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  background: var(--color-light-xl);
+}
+
+.friends__card:hover .friends__button {
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+}
+
 .friends__pets {
   padding: 0px 44px;
   max-width: 261px;
@@ -555,6 +587,11 @@ h6 {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
+}
+
+.friends__pets:hover {
+  cursor: pointer;
+  background: var(--color-primary-light);
 }
 
 
