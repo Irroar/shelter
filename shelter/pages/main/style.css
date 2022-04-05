@@ -10,17 +10,17 @@
   --color-dark-xl: #4c4c4c;
   --color-dark-2xl: ;
   --color-dark-3xl: #292929;
-  --start-screen-gradient: url(/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+  --start-screen-gradient: url(../../assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
   linear-gradient(0deg, #211F20, #211F20);
-  --footer-gradient:  url(/assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
+  --footer-gradient:  url(../../assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
   linear-gradient(0deg, #211F20, #211F20);
   ;
 }
 
 @font-face {
   font-family: 'Georgia';
-  src: url('/assets/fonts/Georgia.woff2') format('woff2'),
-      url('/assets/fonts/Georgia.woff') format('woff');
+  src: url('../../assets/fonts/Georgia.woff2') format('woff2'),
+      url('../../assets/fonts/Georgia.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: 'Arial';
-  src: url('/assets/fonts/ArialMT.woff2') format('woff2'),
-      url('/assets/fonts/ArialMT.woff') format('woff');
+  src: url('../../assets/fonts/ArialMT.woff2') format('woff2'),
+      url('../../assets/fonts/ArialMT.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -336,7 +336,7 @@ h6 {
 .footer__email a::before{
   display: block;
   content: "";
-  background: url(/assets/icons/icon-email.svg) no-repeat;
+  background: url(../../assets/icons/icon-email.svg) no-repeat;
   width: 40px;
   height: 32px;
   float: left;
@@ -350,7 +350,7 @@ h6 {
 .footer__phone a::before{
   display: block;
   content: "";
-  background: url(/assets/icons/icon-phone.svg) no-repeat;
+  background: url(../../assets/icons/icon-phone.svg) no-repeat;
   width: 40px;
   height: 32px;
   float: left;
@@ -370,7 +370,7 @@ h6 {
 }
 
 .footer__content {
-  background-image: url(/assets/icons/icon-marker.svg);
+  background-image: url(../../assets/icons/icon-marker.svg);
   background-position: left center;
   background-repeat: no-repeat;
   padding-left: 42px;
@@ -446,7 +446,7 @@ h6 {
 .donation__credit-card a::before {
   content: "";
   display: block;
-  background: url(/assets/icons/credit-card.svg) no-repeat;
+  background: url(../../assets/icons/credit-card.svg) no-repeat;
   width: 30px;
   height: 23px;
   float: left;
