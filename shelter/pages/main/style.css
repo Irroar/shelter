@@ -104,6 +104,14 @@ h6 {
   box-sizing: content-box;
 }
 
+@media (max-width: 768px) {
+  ._container, 
+  ._container-main {
+  max-width: 708px;
+  }
+}
+
+
 ._container-main {
   padding: 80px 15px 100px 15px;
 }
@@ -124,6 +132,12 @@ h6 {
   align-items: center;
   justify-content: space-between;
   margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    margin-top: 30px;
+  }
 }
 
 .header__logo {
@@ -166,7 +180,6 @@ h6 {
 .header__link {
   color: var(--color-dark-s);
   font-family: Arial;
-  font-size: 15px;
   line-height: 160%;
 }
 
@@ -197,10 +210,29 @@ h6 {
   align-items: center;
 }
 
+@media (max-width: 1200px) {
+  .not-only__container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .not-only__content {
   padding: 343px 0px 243px 0px;
   max-width: 460px;
 }
+
+@media (max-width: 1200px) {
+  .not-only__content {
+    padding: 150px 0px 0px 0px;
+    max-width: 460px;
+  }
+
+  .not-only__content > :last-child {
+    margin: 0 auto;
+  }
+}
+
 
 .not-only__content > *:not(:last-child) {
   margin-bottom: 42px;
@@ -215,7 +247,6 @@ h6 {
 
 .not-only__descriprion {
   color: var(--color-dark-s);
-  font-size: 15px;
   font-family: Arial;
   line-height: 160%;
 }
@@ -243,6 +274,12 @@ h6 {
   padding: 180px 0px 0px 0px;
 }
 
+@media (max-width: 1200px) {
+  .not-only__image {
+    padding: 100px 0px 0px 138px;
+  }
+}
+
 .not-only__image img {
   width: 100%;
   height: auto;
@@ -251,14 +288,30 @@ h6 {
   min-height: 271.77px;
 }
 
+@media (max-width: 1110px) {
+  .not-only__image img{
+    max-width: 569px;
+    max-height: 593px;
+  }
+}
+
+
 /* =========================== ABOUT ========================= */
 
 .about__container {
   background: var(--color-light-xl);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   column-gap: 120px;
+}
+
+@media (max-width: 880px) {
+  .about__container {
+    flex-direction: column-reverse;
+    row-gap: 80px;
+  }
 }
 
 .about__content {
@@ -277,7 +330,6 @@ h6 {
 .about__content p{
   color: var(--color-dark-xl);
   line-height: 160%;
-  font-size: 15px;
   font-family: Arial;
 }
 
@@ -296,9 +348,24 @@ h6 {
   padding-top: 40px;
 }
 
+@media (max-width: 1228px) {
+  .footer {
+    padding-top: 13px;
+  }
+}
+
 .footer__container {
   display: flex;
-  column-gap: 160px;
+  flex-wrap: wrap;
+  column-gap: 159px;
+  justify-content: center;
+}
+
+@media (max-width: 1228px) {
+  .footer__container {
+    row-gap: 65px;
+    column-gap: 61px;
+  }
 }
 
 .footer__container > *:not(:last-child) {
@@ -399,6 +466,15 @@ h6 {
   max-width: 380px;
 }
 
+@media (max-width: 944px) {
+  .donation__container {
+    flex-direction: column-reverse;
+  }
+  .donation__content {
+    padding-bottom: 60px;
+  }
+}
+
 .donation__content > *:not(:last-child) {
   margin-bottom: 19px;
 }
@@ -409,7 +485,6 @@ h6 {
 }
 
 .donation__subtitle {
-  font-size: 15px;
   line-height: 110%;
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
@@ -491,11 +566,30 @@ h6 {
   min-height: 435px;
 }
 
+@media (max-width: 900px) {
+  .friends__slider {
+    column-gap: 13px;
+  }
+  
+}
+
 .friends__slider-container {
   display: flex;
   max-width: 990px;
-  width: 990px;
+  column-gap: 90px;
   justify-content: space-between;
+}
+
+@media (max-width: 1279px) {
+  .friends__slider-container > :last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .friends__slider-container {
+    column-gap: 40px;
+  }
 }
 
 .friends-button {
@@ -530,13 +624,15 @@ h6 {
   background: var(--color-light-s);
   border-radius: 9px;
   transition: all 0.5s ease;
+  width: 270px;
+  height: 435px;
 }
-
-
 
 .friends__card > * {
   margin: 0px 0px 30px 0px;
 }
+
+
 
 .friends__name {
   color: var(--color-dark-l);
@@ -614,11 +710,30 @@ h6 {
   column-gap: 119px;
 }
 
+
 .cards__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
+}
+
+@media (max-width: 1100px){
+  .help__cards {
+      column-gap: 120px;
+  }
+  .cards__card {
+    width: 170px;
+  }
+}
+
+@media (max-width: 888px) {
+  .help__cards {
+    column-gap: 60px;
+  }
+  .cards__card {
+    width: 170px;
+  }
 }
 
 .cards__card p {
